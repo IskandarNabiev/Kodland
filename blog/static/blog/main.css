@@ -1,7 +1,89 @@
 nav {
-    background-color: #fcba03;
-    border: 1px solid #CDCDCD;
-    box-sizing: border-box;
+    background-color: #FFFFFF;
+
+
     height: 102px;
 }
+.img-circle {
+    border-radius: 50%;
+    border: 3px solid #0f0f0f;
+}
 
+.nav-wrapper {
+    padding-top: 10px;
+
+}
+
+.material-icons.md-36 {
+    font-size: 36px;
+}
+
+.brand-logo {
+    position: absolute;
+    width: 120px !important;
+    height: 72.28px;
+    left: 21px;
+}
+
+.letter {
+     padding-left: 200px;
+     color: #010101; /* Красный цвет символов */
+     font-size: 16pt; /* Размер шрифта в процентах */
+     font-family: Circe Rounded;; /* Шрифт с засечками */
+     position: relative; /* Относительное позиционирование */
+     top: 8px; /* Сдвиг сверху */
+
+     font-weight: bold;
+    }
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark {
+    color: rgba(1, 1, 1, 1);
+}
+
+.material-icons.md-light {
+    color: rgba(255, 255, 255, 1);
+}
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+  margin-top: 45px;
+}
+
+h2 .blue-text {
+    color: #315AF2;
+    font-family: Museo Cyrl;
+    font-size: 45px;
+    align-items: center;
+    line-height: 52px;
+    letter-spacing: -0.416667px;
+}
+
+.waves-light  {
+    background-color: #315AF2;
+    border-radius: 3px;
+    position: absolute;
+    width: 168px;
+    height: 68px;
+
+}
+
+.read {
+    width: 120px;
+    height: 73px;
+    font-family: Museo Cyrl;
+    font-size: 26px;
+    line-height: 43px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.416667px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:5px;
+  width: 50%;
+}

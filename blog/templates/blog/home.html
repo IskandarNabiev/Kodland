@@ -4,45 +4,47 @@
 {% block content %}
 
 
-  <nav>
+   <nav>
     <div class="nav-wrapper">
-      <a href="#" class="brand-logo"><img src="{% static 'images/Logo_Kodland.png' %}" /></a>
+      <a href="#" class="brand-logo"><img src="images/Logo_Kodland.png"></a>
+        <span class="letter">Блог</span>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="sass.html"><i class="large material-icons">mail</i></a></li>
-        <li><a href="badges.html"><img src="{% static 'images/Uchenik.png' %}" /></a></li>
-        <li><a href="collapsible.html"><img src="{% static 'images/Vector.png' %}" /></a></li>
+        <li><a href="sass.html"><i class="material-icons md-dark md-36">mail_outline</i></a></li>
+        <li><a href="badges.html"><img class="img-circle" src="images/Uchenik.png"></a></li>
+        <li><a href="collapsible.html"><i class="material-icons md-dark md-36">exit_to_app</i></a></li>
       </ul>
     </div>
   </nav>
 
+
+  <p></p>
+
+
 <div class="container">
     <div class="row">
-
           <div class="col s6">
-
-
-          <div class="row">
-
-              <img src="{% static 'images/like.png' %}">
-              <img src="{% static 'images/comment.png' %}">
-              <img src="{% static 'images/views.png' %}">
-          </div>
-
-                <h2>Почему подросткам стоит изучать программирование?</h2>
+              <div class="no-gutters">
+                  <span style="color:pink; font-weight:bold; font-size:22px">NEW</span>
+                  <i class="small material-icons md-dark">favorite_border</i><span>25</span>
+                  <img src="images/comment.png"><span>25</span>
+                  <i class="small material-icons md-dark">remove_red_eye</i><span>25</span>
+              </div>
+                <h2 class="blue-text">Почему подросткам стоит изучать программирование?</h2>
                 <p>Объясняем почему словосочетание «программирование для подростков»
                     не должно вызывать скептическую улыбку и какие полезные навыки приобретают ребята,
                     изучая программирование.</p>
-              <h2>Читать</h2>
+
+                <a class="waves-effect waves-light btn-large"><span class="read">Читать</span></a>
           </div>
 
           <div class="col s6">
-             <p> <img src="{% static 'images/1Statya_3.png' %}" width="624px" height="568" /></p>
+             <p> <img src="images/1Statya_3.png" width="694px" height="568" /></p>
           </div>
     </div>
 </div>
 
 
-
+<hr>
 
 
 <div class="container">
@@ -51,7 +53,7 @@
     <div class="col s12 m4">
         <div class="card hoverable small">
             <div class="class image">
-              <img src="{% static 'images/1Statya_2.png' %}">
+              <img src="images/1Statya_2.png" class="center">
               <span class="card-title">Card title</span>
             </div>
             <div class="card-content">
@@ -178,5 +180,6 @@
 
 
 <p>sdasd</p>
+
 
 {% endblock %}
