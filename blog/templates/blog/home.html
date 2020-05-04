@@ -22,8 +22,10 @@
 
 <div class="container">
     <div class="row">
+
           <div class="col s6">
               <div class="no-gutters">
+
                   <span style="color:pink; font-weight:bold; font-size:22px">NEW</span>
                   <i class="small material-icons md-dark">favorite_border</i><span>25</span>
                   <img src="{% static "images/comment.png" %}"><span>25</span>
@@ -40,6 +42,7 @@
           <div class="col s6">
              <p> <img src="{% static "images/1Statya_3.png" %}" width="694px" height="568" /></p>
           </div>
+
     </div>
 </div>
 
@@ -50,140 +53,27 @@
 <div class="container">
   <div class="row">
 
+  {% for post in posts %}
     <div class="col s12 m4">
         <div class="card hoverable small">
             <div class="class image">
-              <img src="{% static 'images/1Statya_2.png' %}" class="center">
-              <span class="card-title">Профессии будущего</span>
-            </div>
-            <div class="card-content">
-              <p>Как программирование развивает привычные отрасли?</p>
-            </div>
-            <div class="card-content">
-              <a href="#">Link blog</a>
-            </div>
-          </div>
-    </div>
 
-    <div class="col s12 m4">
-        <div class="card hoverable small">
-            <div class="class image">
+                <p>{{ post.date_posted }}</p>
               <img src="{% static 'images/1Statya_2.png' %}" class="center">
-              <span class="card-title">Card title</span>
+              <span class="card-title">{{ post.title }}</span>
             </div>
             <div class="card-content">
-              <p>efrgtdfsewtbgfvsewrgtfsdewrgtdsfewthgbdvdfethrygfewethrgbf</p>
+              <p>{{ post.content }}</p>
             </div>
             <div class="card-content">
               <a href="#">Link blog</a>
             </div>
-          </div>
-    </div>
 
-       <div class="col s12 m4">
-        <div class="card hoverable small">
-            <div class="class image">
-              <img src="{% static 'images/1Statya_2.png' %}" class="center">
-              <span class="card-title">Card title</span>
-            </div>
-            <div class="card-content">
-              <p>efrgtdfsewtbgfvsewrgtfsdewrgtdsfewthgbdvdfethrygfewethrgbf</p>
-            </div>
-            <div class="card-content">
-              <a href="#">Link blog</a>
-            </div>
           </div>
     </div>
+  {% endfor %}
 
-       <div class="col s12 m4">
-        <div class="card hoverable small">
-            <div class="class image">
-              <img src="{% static 'images/1Statya_2.png' %}" class="center">
-              <span class="card-title">Card title</span>
-            </div>
-            <div class="card-content">
-              <p>efrgtdfsewtbgfvsewrgtfsdewrgtdsfewthgbdvdfethrygfewethrgbf</p>
-            </div>
-            <div class="card-content">
-              <a href="#">Link blog</a>
-            </div>
-          </div>
-    </div>
 
-       <div class="col s12 m4">
-        <div class="card hoverable small">
-            <div class="class image">
-              <img src="{% static 'images/1Statya_2.png' %}" class="center">
-              <span class="card-title">Card title</span>
-            </div>
-            <div class="card-content">
-              <p>efrgtdfsewtbgfvsewrgtfsdewrgtdsfewthgbdvdfethrygfewethrgbf</p>
-            </div>
-            <div class="card-content">
-              <a href="#">Link blog</a>
-            </div>
-          </div>
-    </div>
-
-       <div class="col s12 m4">
-        <div class="card hoverable small">
-            <div class="class image">
-              <img src="{% static 'images/1Statya_2.png' %}" class="center">
-              <span class="card-title">Card title</span>
-            </div>
-            <div class="card-content">
-              <p>efrgtdfsewtbgfvsewrgtfsdewrgtdsfewthgbdvdfethrygfewethrgbf</p>
-            </div>
-            <div class="card-content">
-              <a href="#">Link blog</a>
-            </div>
-          </div>
-    </div>
-
-       <div class="col s12 m4">
-        <div class="card hoverable small">
-            <div class="class image">
-              <img src="{% static 'images/1Statya_2.png' %}" class="center">
-              <span class="card-title">Card title</span>
-            </div>
-            <div class="card-content">
-              <p>efrgtdfsewtbgfvsewrgtfsdewrgtdsfewthgbdvdfethrygfewethrgbf</p>
-            </div>
-            <div class="card-content">
-              <a href="#">Link blog</a>
-            </div>
-          </div>
-    </div>
-
-     <div class="col s12 m4">
-        <div class="card hoverable small">
-            <div class="class image">
-              <img src="{% static 'images/1Statya_2.png' %}" class="center">
-              <span class="card-title">Card title</span>
-            </div>
-            <div class="card-content">
-              <p>efrgtdfsewtbgfvsewrgtfsdewrgtdsfewthgbdvdfethrygfewethrgbf</p>
-            </div>
-            <div class="card-content">
-              <a href="#">Link blog</a>
-            </div>
-          </div>
-    </div>
-
-       <div class="col s12 m4">
-        <div class="card hoverable small">
-            <div class="class image">
-              <img src="{% static 'images/1Statya_2.png' %}" class="center">
-              <span class="card-title">Card title</span>
-            </div>
-            <div class="card-content">
-              <p>efrgtdfsewtbgfvsewrgtfsdewrgtdsfewthgbdvdfethrygfewethrgbf</p>
-            </div>
-            <div class="card-content">
-              <a href="#">Link blog</a>
-            </div>
-          </div>
-    </div>
   </div>
 
 </div>

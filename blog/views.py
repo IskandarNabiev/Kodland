@@ -9,8 +9,7 @@ def home(request):
     context = {'posts': posts}
     return render(request, 'blog/home.html', context)
 
-
-
+    
 
 class PostCreate(View):
     def get(self, request):
