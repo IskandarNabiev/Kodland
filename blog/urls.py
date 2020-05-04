@@ -1,8 +1,8 @@
 from django.contrib import admin
 from django.urls import path, include
-from .views import home, PostCreate
+from .views import home, post_create_view
 
 urlpatterns = [
     path('', home, name='blog-home'),
-    path('posts/', PostCreate.as_view(), name='post_create')
+    path('posts/', post_create_view, name='post_create')
 ]

@@ -15,23 +15,30 @@
   </nav>
 
 
+
+
+<!--    <form class="" action="{% url 'post_create' %}" method="post">-->
+
+<!--        {% csrf_token %}-->
+
+<!--        {% for field in form %}-->
+<!--          <div class="form-group">-->
+<!--            {{ field.label }}-->
+<!--            {{ field }}-->
+<!--          </div>-->
+
+<!--      <button type="submit" name="button">Опубликовать</button>-->
+
+<!--        {% endfor %}-->
+
+<!--    </form>-->
+<div class="container">
     <h2>Добавить статью</h2>
+     <form>
+       {{ form.as_p }}
+       <input type="submit" value="Опубликовать"/>
+     </form>
 
-    <form class="" action="{% url 'post_create' %}" method="post">
-
-        {% csrf_token %}
-
-        {% for field in form %}
-          <div class="form-group">
-            {{ field.label }}
-            {{ field }}
-          </div>
-
-      <button type="submit" name="button">Опубликовать</button>
-
-        {% endfor %}
-
-    </form>
-
+   </div>
 
 {% endblock %}

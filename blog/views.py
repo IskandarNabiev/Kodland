@@ -2,6 +2,7 @@ from datetime import timezone
 from django.shortcuts import render
 from django.views import View
 
+
 from .models import Post
 from .forms import PostForm
 
@@ -15,7 +16,10 @@ def last(request):
     context = {'last_posts': last_posts}
     return render(request, 'blog/home.html', context)
 
-class PostCreate(View):
-    def get(self, request):
-        form = PostForm()
-        return render(request, 'blog/posts.html', context={'form': form})
+def post_create_view(request):
+    form = PostForm(request.POST or None, request.FILES or None)
+    if form.is_valid():
+        form.save()
+
+    context = {'form': form}
+    return render(request, "blog/posts.html", context)
