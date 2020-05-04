@@ -5,6 +5,10 @@ class Post(models.Model):
     title = models.CharField(max_length=100)
     content = models.TextField()
     date_posted = models.DateTimeField(default=timezone.now)
+    image = models.ImageField(upload_to='blogImgs/')
+
+    class Meta:
+        ordering = ['-date_posted', ]
 
     def __str__(self):
         return self.title

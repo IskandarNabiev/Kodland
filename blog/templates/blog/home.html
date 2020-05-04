@@ -6,11 +6,11 @@
 
    <nav>
     <div class="nav-wrapper">
-      <a href="#" class="brand-logo"><img src="images/Logo_Kodland.png"></a>
+      <a href="#" class="brand-logo"><img src="{% static "images/Logo_Kodland.png" %}"></a>
         <span class="letter">Блог</span>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a href="sass.html"><i class="material-icons md-dark md-36">mail_outline</i></a></li>
-        <li><a href="badges.html"><img class="img-circle" src="images/Uchenik.png"></a></li>
+        <li><a href="badges.html"><img class="img-circle" src="{% static "images/Uchenik.png" %}"></a></li>
         <li><a href="collapsible.html"><i class="material-icons md-dark md-36">exit_to_app</i></a></li>
       </ul>
     </div>
@@ -26,7 +26,7 @@
               <div class="no-gutters">
                   <span style="color:pink; font-weight:bold; font-size:22px">NEW</span>
                   <i class="small material-icons md-dark">favorite_border</i><span>25</span>
-                  <img src="images/comment.png"><span>25</span>
+                  <img src="{% static "images/comment.png" %}"><span>25</span>
                   <i class="small material-icons md-dark">remove_red_eye</i><span>25</span>
               </div>
                 <h2 class="blue-text">Почему подросткам стоит изучать программирование?</h2>
@@ -38,7 +38,7 @@
           </div>
 
           <div class="col s6">
-             <p> <img src="images/1Statya_3.png" width="694px" height="568" /></p>
+             <p> <img src="{% static "images/1Statya_3.png" %}" width="694px" height="568" /></p>
           </div>
     </div>
 </div>
@@ -53,11 +53,11 @@
     <div class="col s12 m4">
         <div class="card hoverable small">
             <div class="class image">
-              <img src="images/1Statya_2.png" class="center">
-              <span class="card-title">Card title</span>
+              <img src="{% static 'images/1Statya_2.png' %}" class="center">
+              <span class="card-title">Профессии будущего</span>
             </div>
             <div class="card-content">
-              <p>efrgtdfsewtbgfvsewrgtfsdewrgtdsfewthgbdvdfethrygfewethrgbf</p>
+              <p>Как программирование развивает привычные отрасли?</p>
             </div>
             <div class="card-content">
               <a href="#">Link blog</a>
@@ -68,7 +68,7 @@
     <div class="col s12 m4">
         <div class="card hoverable small">
             <div class="class image">
-              <img src="{% static 'images/1Statya_2.png' %}">
+              <img src="{% static 'images/1Statya_2.png' %}" class="center">
               <span class="card-title">Card title</span>
             </div>
             <div class="card-content">
@@ -83,7 +83,7 @@
        <div class="col s12 m4">
         <div class="card hoverable small">
             <div class="class image">
-              <img src="{% static 'images/1Statya_2.png' %}">
+              <img src="{% static 'images/1Statya_2.png' %}" class="center">
               <span class="card-title">Card title</span>
             </div>
             <div class="card-content">
@@ -98,7 +98,7 @@
        <div class="col s12 m4">
         <div class="card hoverable small">
             <div class="class image">
-              <img src="{% static 'images/1Statya_2.png' %}">
+              <img src="{% static 'images/1Statya_2.png' %}" class="center">
               <span class="card-title">Card title</span>
             </div>
             <div class="card-content">
@@ -113,7 +113,7 @@
        <div class="col s12 m4">
         <div class="card hoverable small">
             <div class="class image">
-              <img src="{% static 'images/1Statya_2.png' %}">
+              <img src="{% static 'images/1Statya_2.png' %}" class="center">
               <span class="card-title">Card title</span>
             </div>
             <div class="card-content">
@@ -128,7 +128,7 @@
        <div class="col s12 m4">
         <div class="card hoverable small">
             <div class="class image">
-              <img src="{% static 'images/1Statya_2.png' %}">
+              <img src="{% static 'images/1Statya_2.png' %}" class="center">
               <span class="card-title">Card title</span>
             </div>
             <div class="card-content">
@@ -143,7 +143,22 @@
        <div class="col s12 m4">
         <div class="card hoverable small">
             <div class="class image">
-              <img src="{% static 'images/1Statya_2.png' %}">
+              <img src="{% static 'images/1Statya_2.png' %}" class="center">
+              <span class="card-title">Card title</span>
+            </div>
+            <div class="card-content">
+              <p>efrgtdfsewtbgfvsewrgtfsdewrgtdsfewthgbdvdfethrygfewethrgbf</p>
+            </div>
+            <div class="card-content">
+              <a href="#">Link blog</a>
+            </div>
+          </div>
+    </div>
+
+     <div class="col s12 m4">
+        <div class="card hoverable small">
+            <div class="class image">
+              <img src="{% static 'images/1Statya_2.png' %}" class="center">
               <span class="card-title">Card title</span>
             </div>
             <div class="card-content">
@@ -158,7 +173,7 @@
        <div class="col s12 m4">
         <div class="card hoverable small">
             <div class="class image">
-              <img src="{% static 'images/1Statya_2.png' %}">
+              <img src="{% static 'images/1Statya_2.png' %}" class="center">
               <span class="card-title">Card title</span>
             </div>
             <div class="card-content">
@@ -179,7 +194,7 @@
 
 
 
-<p>sdasd</p>
+
 
 
 {% endblock %}
